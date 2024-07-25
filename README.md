@@ -16,7 +16,7 @@ Há muito mais à se falar sobre ele, mas deixarei para o leitor que não conhec
 
 # Descrição de cada função
 
-**void selecao_grupo_de_cada_dado(float** vetor_dados, int len_vetor_dados[2], float** k_posicoes, int k)**
+**void selecao_grupo_de_cada_dado(float vetor_dados, int len_vetor_dados[2], float k_posicoes, int k)**
 
 Essa função pegará os dados de treinamento e as posições de cada grupo e para cada objeto determinará qual grupo ele faz parte
 A seleção é de qual ele o dado deve pertencer é feito com distancia euclidiana. A menor distância para um grupo será esse o grupo
