@@ -9,7 +9,9 @@ Por enquanto ainda está incompleto, mas já quero deixar registrado a primeira 
 ## Mas o que é o K-Means?
 
 K-Means é um algoritmo muito importante em ML na área de aprendizado não-supervisionado. Ele tem como objetivo criar Clusters, ou como foi traduzido para o português "grupos", através de dados não rotulados.
+
 Para isso, ele criará K grupos (sim, o K do nome é uma variável), onde você inicialmente coloca as posições iniciais de onde quer começar os grupos, e caso um objeto esteja mais perto de um grupo X, ele será "classificado" com esse grupo. O cálculo de distância pode ser feito de várias maneiras, mas neste projeto usamos distância Euclidiana.
+
 Há muito mais à se falar sobre ele, mas deixarei para o leitor que não conhecer sobre e se interesse, pesquise mais sobre ele. Vai por mim, ele é de simples entendimento e muito legal :)
 
 # Descrição de cada função
