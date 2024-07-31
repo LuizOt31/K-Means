@@ -47,21 +47,38 @@ void calcula_centroide(double** dados, int len_dados[2], int* vetor_grupos, doub
     for(int i = 0; i < len_dados[1]; i++)
         vetor_soma_novo_centroide[i] = 0;
 
-    for (int i = 0; i < k; i ++){
-        for (int j = 0; j < len_dados; j ++){
+    for (int i = 0; i < k; i ++){ // Loop por todos os grupos para redefinir suas posições
 
-            if (vetor_grupos[j] == k){
+        for (int j = 0; j < len_dados[0]; j ++){ // Loop por todos os dados para achar quais são do grupo i
+
+            if (vetor_grupos[j] == i){ // Se objeto == grupo i, calcule os calculos
+
                 num_dados_do_grupo ++;
-                for(int m = 0; m < len_dados[1]; m ++){
+
+                for(int m = 0; m < len_dados[1]; m ++)
                     vetor_soma_novo_centroide[m] += dados[j][m];
-                }
             }
         }
-        for (int m)
+
+        for (int j = 0; j < len_dados[1]; j++)
+            k_grupos[i][j] = vetor_soma_novo_centroide[j] / num_dados_do_grupo; // Calculando o novo centroide do grupo i (calculando cada dimensão)
     }
+
+    free(vetor_soma_novo_centroide);
+
+    return;
 }
 
+void k_means(double** dados, int rows_columns_data[2], double** k_grupos, int k){
+    int rows_columns_data[2]; // primeiro valor é o numero de linhas, o segundo é o de colunas
+    int* grupos;
 
+    for (int i = 0; i < 10; i ++){
+        grupos = selecao_grupo_de_cada_dado(dados, rows_columns_data, k_grupos, k);
+        calcula_centroide(dados, rows_columns_data, grupos, k_grupos, k);
+    }
+    return;
+}
 
 
 
