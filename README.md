@@ -45,9 +45,10 @@ O vetor grupo_selecionado terá tamanho len_vetor_dados[0], e representará de q
 # MAIN.PY
 
 Por enquanto o único testado se está realmente funcionando. Porém é necessário fazer ressalvas. Ele foi testado com um dataset muito pequeno, então carece de testes maiores. Além do mais é muito simples, por isso vou deixar aqui algumas sugestões para o eu do futuro melhorar:
-    * Mudar o algoritmo de um funções jogadas para uma classe específica chamada K_means
-    * Trocar o conjunto de dados aceito, em vez de dataframe, um np.array
-    * Verificações de valores nulos e parametros errados
-    * Só está funcionando para datasets com valores inteiros ou de ponto flutuantes. Pode se colocar outros tipos de dados para funcionar
-    * Em um futuro distante mudar o algoritmo para k_means++
-    
+
+* Mudar o algoritmo de um funções jogadas para uma classe específica chamada K_means
+* Trocar o conjunto de dados aceito, em vez de dataframe, um np.array
+* Verificações de valores nulos e parametros errados
+* Só está funcionando para datasets com valores inteiros ou de ponto flutuantes. Pode se colocar outros tipos de dados para funcionar
+* Em um futuro distante mudar o algoritmo para k_means++
+
